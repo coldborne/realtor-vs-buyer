@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dyyrexglr2nbi"]
+
+[ext_resource type="PackedScene" uid="uid://d244rvg1uoeeh" path="res://apartment/living_room.tscn" id="1_nrrhk"]
+
+[node name="Bedroom" unique_id=1728265690 instance=ExtResource("1_nrrhk")]

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://qu846kwakan"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x7yts"]
+size = Vector2(64, 64)
+
+[sub_resource type="Gradient" id="Gradient_qsyi0"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oq1ad"]
+gradient = SubResource("Gradient_qsyi0")
+
+[node name="Carpet" type="Area2D" unique_id=2097658745]
+
+[node name="Shape" type="CollisionShape2D" parent="." unique_id=2013053024]
+shape = SubResource("RectangleShape2D_x7yts")
+
+[node name="View" type="Sprite2D" parent="." unique_id=719414195]
+texture = SubResource("GradientTexture2D_oq1ad")
