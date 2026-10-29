@@ -1,5 +1,36 @@
 [gd_scene format=3 uid="uid://dyyrexglr2nbi"]
 
-[ext_resource type="PackedScene" uid="uid://d244rvg1uoeeh" path="res://apartment/living_room.tscn" id="1_nrrhk"]
+[ext_resource type="PackedScene" uid="uid://iguhwwn2nowu" path="res://apartment/room.tscn" id="1_rojrf"]
+[ext_resource type="PackedScene" uid="uid://cb4ca4c5roijf" path="res://defects/crack_defect.tscn" id="2_sl1qc"]
+[ext_resource type="PackedScene" uid="uid://dw0t4ubtg8u60" path="res://defects/mold_defect.tscn" id="3_4y1hx"]
+[ext_resource type="PackedScene" uid="uid://qu846kwakan" path="res://apartment/carpet.tscn" id="4_si3qs"]
+[ext_resource type="PackedScene" uid="uid://ce1l8yrph3c3j" path="res://apartment/closet.tscn" id="5_og246"]
 
-[node name="Bedroom" unique_id=1728265690 instance=ExtResource("1_nrrhk")]
+[node name="Bedroom" unique_id=2131787418 instance=ExtResource("1_rojrf")]
+
+[node name="Floor" parent="." index="0" unique_id=436394489]
+modulate = Color(0.95590585, 0.9249757, 0, 1)
+
+[node name="Defect" parent="Defects" parent_id_path=PackedInt32Array(1468814539) index="0" unique_id=447053281 instance=ExtResource("2_sl1qc")]
+position = Vector2(1067, 540)
+
+[node name="Defect2" parent="Defects" parent_id_path=PackedInt32Array(1468814539) index="1" unique_id=1609547889 instance=ExtResource("2_sl1qc")]
+position = Vector2(289, 140)
+
+[node name="Defect3" parent="Defects" parent_id_path=PackedInt32Array(1468814539) index="2" unique_id=124851174 instance=ExtResource("3_4y1hx")]
+position = Vector2(213, 577)
+rotation = 0.54803336
+
+[node name="Carpet" parent="Furniture" parent_id_path=PackedInt32Array(1311214759) index="0" unique_id=2097658745 instance=ExtResource("4_si3qs")]
+position = Vector2(1059, 610)
+
+[node name="Carpet2" parent="Furniture" parent_id_path=PackedInt32Array(1311214759) index="1" unique_id=499019589 instance=ExtResource("4_si3qs")]
+position = Vector2(276, 224)
+
+[node name="Closet" parent="Furniture" parent_id_path=PackedInt32Array(1311214759) index="2" unique_id=983230732 instance=ExtResource("5_og246")]
+position = Vector2(270, 140)
+
+[node name="Closet2" parent="Furniture" parent_id_path=PackedInt32Array(1311214759) index="3" unique_id=1156935786 instance=ExtResource("5_og246")]
+position = Vector2(1068.0001, 528.00006)
+rotation = 0.15184365
+scale = Vector2(0.9999998, 0.9999998)

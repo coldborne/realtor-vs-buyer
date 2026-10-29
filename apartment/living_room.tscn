@@ -1,38 +1,33 @@
 [gd_scene format=3 uid="uid://d244rvg1uoeeh"]
 
-[ext_resource type="PackedScene" uid="uid://fqcg0kfte72v" path="res://apartment/floor.tscn" id="1_q3tre"]
-[ext_resource type="PackedScene" uid="uid://b0dx86745kdjf" path="res://defects/defect.tscn" id="2_2jib2"]
+[ext_resource type="PackedScene" uid="uid://iguhwwn2nowu" path="res://apartment/room.tscn" id="1_2jib2"]
+[ext_resource type="PackedScene" uid="uid://cb4ca4c5roijf" path="res://defects/crack_defect.tscn" id="2_2jib2"]
+[ext_resource type="PackedScene" uid="uid://dw0t4ubtg8u60" path="res://defects/mold_defect.tscn" id="3_lpuik"]
 [ext_resource type="PackedScene" uid="uid://qu846kwakan" path="res://apartment/carpet.tscn" id="3_uqq8m"]
 [ext_resource type="PackedScene" uid="uid://ce1l8yrph3c3j" path="res://apartment/closet.tscn" id="4_lpuik"]
 
-[node name="LivingRoom" type="Node2D" unique_id=1728265690]
+[node name="LivingRoom" unique_id=2131787418 instance=ExtResource("1_2jib2")]
 
-[node name="Floor" parent="." unique_id=436394489 instance=ExtResource("1_q3tre")]
-position = Vector2(7, 32)
-metadata/_edit_lock_ = true
-
-[node name="Defect" parent="." unique_id=447053281 instance=ExtResource("2_2jib2")]
+[node name="Defect" parent="Defects" parent_id_path=PackedInt32Array(1468814539) index="0" unique_id=447053281 instance=ExtResource("2_2jib2")]
 position = Vector2(1067, 540)
 
-[node name="Defect2" parent="." unique_id=997851694 instance=ExtResource("2_2jib2")]
+[node name="Defect2" parent="Defects" parent_id_path=PackedInt32Array(1468814539) index="1" unique_id=1915648175 instance=ExtResource("2_2jib2")]
 position = Vector2(367, 409)
 
-[node name="Defect3" parent="." unique_id=1223061735 instance=ExtResource("2_2jib2")]
-position = Vector2(585, 284)
+[node name="Defect3" parent="Defects" parent_id_path=PackedInt32Array(1468814539) index="2" unique_id=126975891 instance=ExtResource("3_lpuik")]
+position = Vector2(658, 248)
 rotation = 0.54803336
 
-[node name="Furniture" type="Node2D" parent="." unique_id=200630801]
-
-[node name="Carpet" parent="Furniture" unique_id=2097658745 instance=ExtResource("3_uqq8m")]
+[node name="Carpet" parent="Furniture" parent_id_path=PackedInt32Array(1311214759) index="0" unique_id=2097658745 instance=ExtResource("3_uqq8m")]
 position = Vector2(1096, 622)
 
-[node name="Carpet2" parent="Furniture" unique_id=1635359194 instance=ExtResource("3_uqq8m")]
+[node name="Carpet2" parent="Furniture" parent_id_path=PackedInt32Array(1311214759) index="1" unique_id=1852703163 instance=ExtResource("3_uqq8m")]
 position = Vector2(1012, 598)
 
-[node name="Closet" parent="Furniture" unique_id=983230732 instance=ExtResource("4_lpuik")]
+[node name="Closet" parent="Furniture" parent_id_path=PackedInt32Array(1311214759) index="2" unique_id=983230732 instance=ExtResource("4_lpuik")]
 position = Vector2(388, 410)
 
-[node name="Closet2" parent="Furniture" unique_id=20589238 instance=ExtResource("4_lpuik")]
+[node name="Closet2" parent="Furniture" parent_id_path=PackedInt32Array(1311214759) index="3" unique_id=42779436 instance=ExtResource("4_lpuik")]
 position = Vector2(1068.0001, 528.00006)
 rotation = 0.15184365
-scale = Vector2(0.99999994, 0.99999994)
+scale = Vector2(0.9999999, 0.9999999)

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://iguhwwn2nowu"]
+
+[ext_resource type="PackedScene" uid="uid://fqcg0kfte72v" path="res://apartment/floor.tscn" id="1_n7xud"]
+
+[node name="Room" type="Node2D" unique_id=2131787418]
+
+[node name="Floor" parent="." unique_id=436394489 instance=ExtResource("1_n7xud")]
+metadata/_edit_lock_ = true
+
+[node name="Defects" type="Node2D" parent="." unique_id=1468814539]
+
+[node name="Furniture" type="Node2D" parent="." unique_id=1311214759]
