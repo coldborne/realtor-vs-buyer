@@ -1,16 +1,7 @@
 [gd_scene format=3 uid="uid://b0dx86745kdjf"]
 
-[ext_resource type="Texture2D" uid="uid://b6ccqmcad11dq" path="res://defects/textures/crack.png" id="1_lr4mt"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_oq1ad"]
-size = Vector2(64, 64)
-
 [node name="Defect" type="Area2D" unique_id=447053281]
-rotation = 0.64751714
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=518796925]
-modulate = Color(1, 0.37722212, 0.64716876, 1)
-texture = ExtResource("1_lr4mt")
 
 [node name="Shape" type="CollisionShape2D" parent="." unique_id=1229203480]
-shape = SubResource("RectangleShape2D_oq1ad")
