@@ -21,7 +21,7 @@ func _ready() -> void:
 	
 	_total_price = _total_price * _total_defect_price_decrement_percent
 	print("Найдено дефектов: %d" % _defects.size())
-	print("Итоговая сумма: %f" % _total_price)
+	print("Итоговая сумма: %d" % _total_price)
 
 
 func _collect_defects(parent_node: Node) -> void:
