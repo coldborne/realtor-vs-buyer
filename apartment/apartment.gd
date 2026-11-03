@@ -2,6 +2,7 @@ class_name Apartment
 extends Node2D
 
 const _base_price: int = 1000000
+var _total_defect_price_decrement_percent: int = 0;
 var _total_price: int = _base_price;
 var _defects: Array[Defect] = []
 
@@ -15,8 +16,9 @@ func _ready() -> void:
 		
 		print("%s (%s): -%d%%" % [defect, room.name, defect_price_decrement_percent])
 		
-		_total_price = _total_price * (defect_price_decrement_percent / 100)
-		
+		_total_defect_price_decrement_percent += defect_price_decrement_percent;
+	
+	_total_price = _total_price * 	_total_defect_price_decrement_percent / 100;
 	print("Найдено дефектов: %d" % _defects.size())
 	print("Итоговая сумма: %d" % _total_price)
 
