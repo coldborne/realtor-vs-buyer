@@ -1,13 +1,17 @@
 [gd_scene format=3 uid="uid://cy86ovtsqos8h"]
 
-[ext_resource type="PackedScene" uid="uid://d244rvg1uoeeh" path="res://apartment/living_room.tscn" id="1_l2k22"]
-[ext_resource type="PackedScene" uid="uid://dyyrexglr2nbi" path="res://apartment/bedroom.tscn" id="2_nrraw"]
+[ext_resource type="Script" uid="uid://bjpkc2uc6lf6u" path="res://apartment/apartment.gd" id="1_doewj"]
+[ext_resource type="PackedScene" uid="uid://d244rvg1uoeeh" path="res://apartment/rooms/living_room.tscn" id="1_l2k22"]
+[ext_resource type="PackedScene" uid="uid://dyyrexglr2nbi" path="res://apartment/rooms/bedroom.tscn" id="2_nrraw"]
 
 [node name="Apartment" type="Node2D" unique_id=2094548546]
+script = ExtResource("1_doewj")
 
 [node name="LivingRoom" parent="." unique_id=2125070612 instance=ExtResource("1_l2k22")]
 scale = Vector2(0.5, 0.5)
+script = null
 
 [node name="Bedroom" parent="." unique_id=2131787418 instance=ExtResource("2_nrraw")]
 position = Vector2(600, 0)
 scale = Vector2(0.5, 0.5)
+script = null
