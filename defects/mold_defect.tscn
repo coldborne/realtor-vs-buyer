@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://dw0t4ubtg8u60"]
 
 [ext_resource type="PackedScene" uid="uid://b0dx86745kdjf" path="res://defects/defect.tscn" id="1_yo4ux"]
+[ext_resource type="Script" uid="uid://bppnue4gpldm3" path="res://defects/scripts/mold_defect.gd" id="2_r08qs"]
 [ext_resource type="Texture2D" uid="uid://coc5lp42rciou" path="res://defects/textures/mold.png" id="2_y8eqm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pioat"]
 size = Vector2(74, 74)
 
 [node name="MoldDefect" unique_id=447053281 instance=ExtResource("1_yo4ux")]
+script = ExtResource("2_r08qs")
 
 [node name="Sprite" parent="." index="0" unique_id=518796925]
 texture_filter = 1

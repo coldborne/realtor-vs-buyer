@@ -2,11 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://b0dx86745kdjf" path="res://defects/defect.tscn" id="1_e2nmp"]
 [ext_resource type="Texture2D" uid="uid://b6ccqmcad11dq" path="res://defects/textures/crack.png" id="2_6ft41"]
+[ext_resource type="Script" uid="uid://depd2f80tkc3b" path="res://defects/scripts/crack_defect.gd" id="2_ai2m4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ft41"]
 size = Vector2(64, 64)
 
 [node name="CrackDefect" unique_id=447053281 instance=ExtResource("1_e2nmp")]
+script = ExtResource("2_ai2m4")
 
 [node name="Sprite" parent="." index="0" unique_id=518796925]
 texture = ExtResource("2_6ft41")
