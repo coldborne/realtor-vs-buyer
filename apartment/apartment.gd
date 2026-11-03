@@ -9,10 +9,11 @@ func _ready() -> void:
 	_collect_defects(self)
 	
 	for defect in _defects:
-		var room: Room = defect.get_parent().get_parent()
+		var room: Room = defect.get_parent().get_parent() as Room
+
 		var defect_price_decrement_percent: int = defect.get_price_decrement_percent();
 		
-		print("%s (%s): -%d%%" % defect, room.name, defect_price_decrement_percent)
+		print("%s (%s): -%d%%" % [defect, room.name, defect_price_decrement_percent])
 		
 		_total_price = _total_price * (defect_price_decrement_percent / 100)
 		
