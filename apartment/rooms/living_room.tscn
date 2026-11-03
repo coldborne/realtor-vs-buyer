@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d244rvg1uoeeh"]
 
-[ext_resource type="PackedScene" uid="uid://iguhwwn2nowu" path="res://apartment/room.tscn" id="1_2jib2"]
+[ext_resource type="PackedScene" uid="uid://iguhwwn2nowu" path="res://apartment/rooms/room.tscn" id="1_2jib2"]
 [ext_resource type="PackedScene" uid="uid://cb4ca4c5roijf" path="res://defects/crack_defect.tscn" id="2_2jib2"]
 [ext_resource type="PackedScene" uid="uid://dw0t4ubtg8u60" path="res://defects/mold_defect.tscn" id="3_lpuik"]
 [ext_resource type="PackedScene" uid="uid://qu846kwakan" path="res://apartment/carpet.tscn" id="3_uqq8m"]

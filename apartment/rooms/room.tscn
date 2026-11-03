@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://iguhwwn2nowu"]
 
 [ext_resource type="PackedScene" uid="uid://fqcg0kfte72v" path="res://apartment/floor.tscn" id="1_n7xud"]
+[ext_resource type="Script" uid="uid://jr6m0fg4b0sf" path="res://apartment/rooms/room.gd" id="1_rdfom"]
 
 [node name="Room" type="Node2D" unique_id=2131787418]
+script = ExtResource("1_rdfom")
 
 [node name="Floor" parent="." unique_id=436394489 instance=ExtResource("1_n7xud")]
 metadata/_edit_lock_ = true
