@@ -3,7 +3,7 @@ extends Node2D
 
 const _BASE_PRICE: int = 1000000
 var _total_defect_price_decrement_percent: float = 1.0
-var _total_price: int = _BASE_PRICE
+var _total_price: float = _BASE_PRICE
 var _defects: Array[Defect] = []
 
 
@@ -21,7 +21,7 @@ func _ready() -> void:
 	
 	_total_price = _total_price * _total_defect_price_decrement_percent
 	print("Найдено дефектов: %d" % _defects.size())
-	print("Итоговая сумма: %d" % _total_price)
+	print("Итоговая сумма: %f" % _total_price)
 
 
 func _collect_defects(parent_node: Node) -> void:
